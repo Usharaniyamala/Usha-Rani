@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Institute - Banking & SSC Preparation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Blinking effect */
+        .blinking {
+            animation: blink-animation 1.5s steps(5, start) infinite;
+            color: #ff3107;
+            font-weight: bold;
+        }
+        @keyframes blink-animation {
+            to { visibility: hidden; }
+        }
+
+        /* Form styling */
+        .enroll-form {
+            max-width: 500px;
+            margin: auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .enroll-form label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        .enroll-form input, .enroll-form select, .enroll-form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .enroll-form button {
+            width: 100%;
+            padding: 0.5em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            animation: blink-animation 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome To Usha CCE</h1>
+    <p class="announcement blinking">New classes starting soon! Hurry up and book your slot.</p>
+    <!-- Blinking Image Carousel -->
+    <div class="carousel">
+        <img src="/Images.jpg" alt="Images">
+        
+    </div>
+</header>
+
+<main>
+    <section id="courses">
+        <h2 class="blinking">Courses Offered</h2>
+        <p>We offer comprehensive coaching for <strong>Banking</strong> and <strong>SSC</strong> exams with expert guidance and study material.</p>
+        <p><strong>Training Duration and Fees:</strong></p>
+        <ul>
+            <li>Banking Exam Preparation: 4 months, <strong>₹23,000</strong></li>
+            <li>SSC Exam Preparation: 6 months, <strong>₹6,000</strong></li>
+        </ul>
+        <p>Both <strong>online and offline classes</strong> are available to cater to different learning preferences.</p>
+    </section>
+
+    <section id="mock-tests">
+        <h2>Weekly Mock Tests</h2>
+        <p>Mock tests are held every <strong>Sunday</strong> to help students assess their preparation and get ready for the actual exams.</p>
+        <p>Both <strong>online and offline tests</strong> are provided.</p>
+    </section>
+
+    <section id="live-sessions">
+        <h2>Live Sessions</h2>
+        <p>We provide interactive <strong>live sessions</strong> for students to clarify their doubts and improve their understanding.</p>
+    </section>
+
+    <section id="computer-lab">
+        <h2>Computer Lab</h2>
+        <p>Our institute is equipped with a modern <strong>computer lab</strong> available for practice and research purposes.</p>
+    </section>
+
+    <section id="faculty">
+        <h2>Meet Our Faculty</h2>
+        <div class="faculty">
+            <div class="faculty-detail">
+                <img src="Faculty.jpg" width="700px" height="200px" alt="Dr. John Doe">
+                <div>
+                    <h3>Dr. John Doe</h3>
+                    <p>Ph.D. in Economics with 10+ years of experience in banking coaching.</p>
+                </div>
+            </div>
+            <div class="faculty-detail">
+                <img src="Faculty1.jpg" width="700px" height="200px" alt="Ms. Jane Smith">
+                <div>
+                    <h3>Ms. Jane Smith</h3>
+                    <p>M.Sc. in Mathematics and an experienced SSC exam trainer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="alumni">
+        <h2>Our Successful Students</h2>
+        <div class="alumni">
+            <div class="alumni-detail">
+                <img src="student1.jpg" width="700px" height="200px" alt="Student Name">
+                <p><strong>Selected as RRB PO</strong></p>
+            </div>
+            <div class="alumni-detail">
+                <img src="student2.jpg" width="700px" height="200px" alt="Student Name">
+                <p><strong>Selected as SSC CGL Officer</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="enrollment">
+        <h2>Enroll Now!</h2>
+        <p>Don't miss out on our expert guidance.</p>
+
+        <!-- Enrollment Form -->
+        <form class="enroll-form" id="enrollForm">
+            <label for="studentName">Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="Banking">Banking Exam Preparation</option>
+                <option value="SSC">SSC Exam Preparation</option>
+            </select>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <button type="submit">Book Your Slot Now</button>
+        </form>
+    </section>
+</main>
+
+<script>
+    function enrollNow() {
+        alert("Thank you for enrolling! We will contact you soon.");
+    }
+
+    // Handle form submission
+    document.getElementById('enrollForm').onsubmit = function(event) {
+        event.preventDefault();
+        enrollNow();
+    };
+</script>
+
+</body>
+</html>

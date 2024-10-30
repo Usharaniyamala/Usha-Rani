@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.announcement {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+#courses li {
+    padding: 5px 0;
+}
+
+.faculty, .alumni {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.faculty-detail, .alumni-detail {
+    text-align: center;
+    max-width: 200px;
+}
+
+.faculty-detail img, .alumni-detail img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
